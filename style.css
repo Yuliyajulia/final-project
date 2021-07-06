@@ -1,0 +1,119 @@
+@charset "utf-8";
+/*CSS document for all pages of the Project*/
+
+html {
+  background-color: white;
+}
+body {
+  background-color: white;
+  color:#212529;
+  font-family:'Montserrat',sans-serif;
+}
+header {
+  max-width:1440px;
+  width:95%;
+  display:flex;
+  justify-content: space-between;
+  padding:0 20px;
+  margin:0;
+  }
+header nav ul,footer nav ul {
+  list-style-type: none;
+  display:flex;
+  justify-content: flex-end;
+  margin:0;
+}
+header nav a, footer nav a {
+  text-decoration: none;
+  display: block;
+  padding:15px 10px;
+  color:white;
+  font-size:15px;
+  transition: background-color .8s;
+}
+
+/*add hover*/
+header nav a:hover {
+  background-color: #fed136;
+}
+footer nav a {
+  color:#fed136;
+}
+h1{
+  font-size:18px;
+  color:#fed136;
+  margin-left: 75px;
+}
+
+h3 {
+  font-size: 20px,
+  font-weight:bold;
+}
+h4 {
+  font-size:15px;
+  font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6,p {
+  text-align: center;
+}
+
+button {
+  background-color: #fed136;
+  color:white;
+  font-size:15px;
+  font-weight:bold;
+  border:none;
+  border-radius: 3px;
+  padding:15px 15px;
+  margin-bottom: 65px;
+  transition: background-color .4s;
+}
+button:hover {
+  background-color: white;
+  color:#fed136;
+  }
+main {
+  max-width:1440px;
+  width:95%;
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap;
+  text-align: center;
+}
+main div{
+  flex:1;
+  padding:20px;
+}
+footer {
+  max-width:1440px;
+  width:95%;
+  margin:auto;
+  padding:auto;
+  display:flex;
+  flex-wrap:wrap;
+  text-align: center;
+}
+footer div {
+  flex:1;
+  padding:20px;
+}
+footer p {
+  font-size:15px;
+  padding:15px 10px;
+}
+footer:nth-child(4) {
+  background-color:white;
+  border-top-style:solid
+}
+
+.card {
+  border-radius:15px;
+  background-color: #fed136;
+}
+
+@media screen and (max-width:600px) {
+  header {
+    flex-direction: column;
+  }
+
+} /*end of media query*/
